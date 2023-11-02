@@ -1,0 +1,12 @@
+digraph MinimizedDFA {
+  rankdir=LR;
+  node [shape = circle];
+  "S0" [shape = doublecircle];
+  "S1" [shape = doublecircle];
+  "S1" -> "S0" [label="b"];
+  "S1" -> "S0" [label="c"];
+  "S1" -> "S2" [label="d"];
+  "S1" -> "S0" [label="e"];
+  "S2" [shape = doublecircle];
+  "S2" -> "S2" [label="d"];
+}

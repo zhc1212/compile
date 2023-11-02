@@ -1,0 +1,14 @@
+digraph DFA {
+  rankdir=LR;
+  node [shape = circle];
+  "{S2,S4,S6,S8,S10,S12,S13,S14,S15,S16,S17,S18,S19,S20,S22,S23,S24,S25}" [shape = doublecircle];
+  "{S2,S4,S6,S8,S10,S12,S13,S14,S15,S16,S17,S18,S19,S20,S22,S23,S24,S25}" -> "{S3,S7,S11,S15,S19,S25}" [label="b"];
+  "{S2,S4,S6,S8,S10,S12,S13,S14,S15,S16,S17,S18,S19,S20,S22,S23,S24,S25}" -> "{S5,S7,S11,S15,S19,S25}" [label="c"];
+  "{S2,S4,S6,S8,S10,S12,S13,S14,S15,S16,S17,S18,S19,S20,S22,S23,S24,S25}" -> "{S20,S21,S23,S25}" [label="d"];
+  "{S2,S4,S6,S8,S10,S12,S13,S14,S15,S16,S17,S18,S19,S20,S22,S23,S24,S25}" -> "{S9,S11,S15,S19,S25}" [label="e"];
+  "{S3,S7,S11,S15,S19,S25}" [shape = doublecircle];
+  "{S5,S7,S11,S15,S19,S25}" [shape = doublecircle];
+  "{S20,S21,S23,S25}" [shape = doublecircle];
+  "{S20,S21,S23,S25}" -> "{S20,S21,S23,S25}" [label="d"];
+  "{S9,S11,S15,S19,S25}" [shape = doublecircle];
+}
